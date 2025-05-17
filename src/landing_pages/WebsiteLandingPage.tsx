@@ -13,7 +13,7 @@
   import postgres from "@/assets/postgres.svg"
   import mysql from "@/assets/mysql.svg"
   import flutter from "@/assets/flutter.svg"
-  import mongoDB from "@/assets/mongoDB.svg"
+  import mongoDB from "@/assets/MongoDB.svg"
 
   export const WebsiteLandingPage = () => {
     return (
