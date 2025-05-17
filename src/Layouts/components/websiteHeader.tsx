@@ -8,7 +8,7 @@ import logo from "@/assets/Logo.png"
 export function WebsiteHeader() {
 
   return (
-    <header className="flex items-center justify-around bg-[#1A0B2E] h-[60px]" >
+    <header className="flex items-center justify-around bg-[#1A0B2E] text-white h-[60px]" >
         <Link href="/" className="text-xl font-semibold">
           <Image src={logo} alt='logo' className='w-[14px] h-[10px]' />   
         </Link>
