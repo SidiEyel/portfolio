@@ -59,12 +59,10 @@
             </div>
 
             <div className="flex flex-col items-start md:items-center w-full gap-4">
-              <h2 className="text-3xl font-bold">I'm a Software Engineer!</h2>
+              <h2 className="text-3xl font-bold">Senior Frontend Engineer specializing <br /> in scalable React & Next.js applications</h2>
 
               <p className="text-gray-400 max-w-xl">
-                I specialize in building exceptional digital experiences. Currently, I'm focused on creating accessible,
-                human-centered products at a company where I help clients achieve their digital goals through innovative
-                solutions while maintaining best practices.
+                II design and build high-performance web applications using React, Next.js, and modern frontend architectures. I focus on scalable UI systems, performance optimization, and building reliable user experiences used by real businesses.
               </p>
 
             </div>
