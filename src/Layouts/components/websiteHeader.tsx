@@ -3,7 +3,7 @@ import { WEBSITE_MENU } from "./website-menu";
 import { Earth } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import logo from "@/assets/Logo.png"
+import logo from "@/assets/Logo.jpeg"
 
 export function WebsiteHeader() {
 
