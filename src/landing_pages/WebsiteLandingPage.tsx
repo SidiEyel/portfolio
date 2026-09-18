@@ -6,7 +6,6 @@ import {
   Bot,
   BriefcaseBusiness,
   CheckCircle2,
-  Code2,
   Database,
   Download,
   ExternalLink,
@@ -16,7 +15,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Network,
   Phone,
   Rocket,
   ServerCog,
@@ -30,105 +28,100 @@ const navItems = [
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Open Source', href: '#open-source' },
   { label: 'AI & Automation', href: '#ai-automation' },
   { label: 'Contact', href: '#contact' },
 ];
 
 const stats = [
-  { value: '3+', label: 'Years building web platforms' },
-  { value: '7', label: 'Professional roles and internships' },
-  { value: '5+', label: 'Product and business domains' },
+  { value: '3+', label: 'Years shipping production platforms' },
+  { value: '2', label: 'Apps live on the App Store & Google Play' },
+  { value: 'React', label: 'Open-source contributor (merged PR)' },
 ];
 
 const skillGroups = [
   {
-    title: 'Programming',
-    icon: Code2,
-    skills: ['JavaScript', 'TypeScript', 'PHP', 'Dart', 'SQL'],
-  },
-  {
     title: 'Backend',
     icon: ServerCog,
-    skills: ['Django REST Framework', 'REST APIs', 'Node.js', 'Spring Boot', 'Ruby on Rails', 'Strapi'],
+    skills: ['Laravel / PHP', 'Node.js', 'Python (Django REST)', 'Spring Boot', 'Strapi', 'REST API design', 'Auth / authorization'],
   },
   {
     title: 'Frontend',
     icon: Sparkles,
-    skills: ['React.js', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS', 'Responsive UI'],
+    skills: ['React', 'Next.js (SSR / ISR)', 'TypeScript', 'TanStack Start', 'React Native', 'Tailwind CSS'],
   },
   {
-    title: 'Databases',
+    title: 'Data',
     icon: Database,
-    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Oracle', 'Supabase'],
+    skills: ['PostgreSQL', 'Query optimization', 'MySQL', 'MongoDB', 'Supabase'],
   },
   {
     title: 'AI & Automation',
     icon: Bot,
-    skills: ['AI APIs', 'LLM integration', 'Workflow automation', 'Data processing', 'Intelligent assistants'],
+    skills: ['LLM / OpenAI-compatible APIs', 'Document processing', 'Workflow automation', 'Intelligent assistants'],
   },
   {
-    title: 'DevOps & Tools',
+    title: 'Practices & Tools',
     icon: Workflow,
-    skills: ['Git', 'GitHub', 'GitLab', 'Docker', 'CI/CD', 'Postman', 'Swagger', 'Jira', 'Trello', 'Kanban'],
+    skills: ['Git / GitHub PR workflow', 'CI', 'Regression tests', 'Code review', 'Docker', 'Agile'],
   },
   {
-    title: 'Soft Skills',
-    icon: Network,
-    skills: ['Teamwork', 'Analytical thinking', 'Problem solving', 'Adaptability', 'Motivation', 'Client collaboration'],
+    title: 'Languages',
+    icon: Languages,
+    skills: ['Arabic (native)', 'French (B2)', 'English (B2)'],
   },
 ];
 
 const experiences = [
   {
-    role: 'Development and Integration Engineer',
-    company: 'Smart MS SA',
-    period: 'Feb 2024 - Present',
+    role: 'Software Engineer',
+    company: 'BEDEL SARL',
+    period: 'Jun 2026 - Present',
     location: 'Nouakchott, Mauritania',
     summary:
-      'Developing and integrating web solutions for public and private sector projects, connecting technical delivery with real business needs.',
+      'Bedel is a fintech super-app for Mauritania (iOS / Android): payments, recharge and gift cards, and 30+ digital services in one place.',
     highlights: [
-      'Built high-performance web applications with React, Next.js, and Django REST Framework.',
-      'Designed custom interfaces, APIs, and integration workflows for project-specific requirements.',
-      'Supported continuous integration and deployment practices for faster, more reliable delivery.',
+      'Design and implement Laravel + PostgreSQL backends exposing REST APIs consumed by React, Next.js, TanStack Start and React Native clients.',
+      'Built LLM-backed features for the in-app AI assistant (Arabic and French), workflow automation and customer support.',
+      'Phone-number + OTP authentication and secure payment flows via local wallets (Bankily).',
     ],
   },
   {
-    role: 'Software Project Developer',
-    company: 'XpVision',
-    period: 'Sep 2024 - Nov 2024',
-    location: 'Part-time, Remote',
+    role: 'Software Engineer',
+    company: 'SMART MS SA',
+    period: 'Oct 2023 - Jun 2026',
+    location: 'Nouakchott, Mauritania',
     summary:
-      'Delivered client-focused web features and content platforms using modern frontend architecture and structured backend services.',
+      'Shipped customer-facing products and internal platforms for private and public-sector clients.',
     highlights: [
-      'Implemented responsive Next.js interfaces focused on performance and usability.',
-      'Built and maintained Strapi REST APIs for flexible content and data management.',
-      'Worked with Kanban and version control to keep remote development organized.',
+      'Sha6er - food-delivery platform (iOS / Android, 4.6 stars): ordering, real-time order tracking with courier map, wallet payments, restaurateur dashboard.',
+      'Smart Claim - claims-management SaaS: customizable claim forms, role-based access, real-time notifications, comment threads.',
+      'Designed database schemas and optimized reporting SQL on PostgreSQL; built operational dashboards for decision support.',
+      'Integrated AI features (document processing, verification, conversational assistant) into internal business tools.',
+      'Earlier (Oct 2023 - Feb 2024): led WordPress delivery for client sites, including Three.js interactive experiences and SEO / performance work.',
     ],
   },
   {
     role: 'Full-Stack Developer',
-    company: 'Elham',
-    period: 'Jun 2024 - Aug 2024',
-    location: 'Part-time, Remote',
+    company: 'XpVision',
+    period: 'Sep 2024 - Dec 2024',
+    location: 'Part-time, remote (Germany)',
     summary:
-      'Created business web platforms including a hotel management system and company website.',
+      'Enterprise SaaS features for international customers, working asynchronously in English with a distributed European team.',
     highlights: [
-      'Developed React interfaces and integrated Supabase for backend data and authentication.',
-      'Improved user experience and application performance across key workflows.',
-      'Collaborated remotely with the team to ship features in an agile delivery rhythm.',
+      'Implemented responsive Next.js interfaces focused on performance and usability.',
+      'Built and maintained Strapi REST APIs for content and structured data management.',
     ],
   },
   {
-    role: 'WordPress Lead',
-    company: 'Smart MS SA',
-    period: 'Oct 2023 - Feb 2024',
-    location: 'Nouakchott, Mauritania',
-    summary:
-      'Led WordPress delivery for client websites, combining CMS customization, performance work, and interactive experiences.',
+    role: 'Front-End Developer',
+    company: 'Moulhim',
+    period: 'Jun 2024 - Aug 2024',
+    location: 'Part-time, remote (Saudi Arabia)',
+    summary: 'Hotel-management system and company site for an Arabic-speaking client.',
     highlights: [
-      'Customized themes and implemented client-specific features.',
-      'Integrated Three.js into WordPress for interactive 3D experiences.',
-      'Improved SEO structure, site speed, and maintainability.',
+      'Developed React interfaces and integrated Supabase for data and authentication.',
+      'Improved user experience and application performance across key workflows.',
     ],
   },
   {
@@ -137,84 +130,149 @@ const experiences = [
     period: 'May 2023 - Oct 2023',
     location: 'Nouakchott, Mauritania',
     summary:
-      'Contributed to a teleconsultation platform connecting patients and doctors through real-time medical workflows.',
+      'Teleconsultation platform connecting patients and doctors through real-time medical workflows.',
     highlights: [
       'Integrated Twilio video calls for remote consultation sessions.',
-      'Built React interfaces and Spring Boot backend services.',
-      'Supported platform performance, security, and connected medical device integrations.',
+      'Built React interfaces and Spring Boot backend services, with authentication / authorization and reporting queries.',
     ],
+  },
+  {
+    role: 'Full-Stack Developer (internship)',
+    company: 'Promesse',
+    period: 'Feb 2023 - Jul 2023',
+    location: 'Remote',
+    summary: 'REST APIs, reusable components and Agile delivery on a scalable application architecture.',
+    highlights: [],
   },
 ];
 
-const projects = [
+type ProjectLink = { label: string; href: string };
+
+const projects: {
+  name: string;
+  tagline: string;
+  description: string;
+  technologies: string[];
+  features: string[];
+  links: ProjectLink[];
+}[] = [
   {
-    name: 'Khadematy',
+    name: 'Tahdir',
+    tagline: 'Built and operated by me - live, paid enrollment',
     description:
-      'A digital service platform focused on making public-facing workflows easier to access and manage.',
-    technologies: ['Next.js', 'React', 'Django REST Framework', 'PostgreSQL'],
-    features: ['Service request flows', 'User dashboards', 'API integrations', 'Role-aware interfaces'],
-    impact: 'Helps modernize administrative interactions through clearer digital journeys and structured data.',
+      'Exam-preparation platform for Mauritanian civil-service competitions, also offered inside the Bedel app.',
+    technologies: ['Next.js', 'React', 'Laravel', 'PostgreSQL', 'Arabic / French UI'],
+    features: [
+      '152 specializations',
+      '60-question timed mock exams, three levels',
+      'Per-question corrections and statistics',
+      'Adaptive learning paths and online payment',
+    ],
+    links: [{ label: 'Live site', href: 'https://tahdir.digiwave-tech.com/' }],
   },
   {
-    name: 'Livi',
+    name: 'Bedel',
+    tagline: 'BEDEL SARL - fintech super-app',
     description:
-      'A modern web platform built around clean user flows, reliable content management, and scalable frontend delivery.',
-    technologies: ['Next.js', 'Strapi', 'REST APIs', 'Tailwind CSS'],
-    features: ['Responsive UI', 'CMS-backed content', 'Reusable components', 'Client-specific features'],
-    impact: 'Improves content operations and creates a faster experience for users across devices.',
+      'Payments, recharge and gift cards, an Arabic / French AI assistant and 30+ digital services for Mauritania.',
+    technologies: ['Laravel', 'PostgreSQL', 'React Native', 'Next.js', 'LLM integration'],
+    features: ['OTP authentication', 'Wallet payments (Bankily)', 'In-app AI assistant', 'Multi-service marketplace'],
+    links: [
+      { label: 'bedel.mr', href: 'https://bedel.mr/' },
+      { label: 'App Store', href: 'https://apps.apple.com/mr/app/bedel/id6472602322' },
+      { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.bedel.app' },
+    ],
   },
   {
-    name: 'El Amana Optique',
+    name: 'Sha6er',
+    tagline: 'SMART MS SA - food delivery, 4.6 stars',
     description:
-      'A business website and management-oriented experience for an optical brand, designed for credibility and easy discovery.',
-    technologies: ['React', 'Next.js', 'CMS', 'SEO'],
-    features: ['Brand presentation', 'Product/service sections', 'Contact funnels', 'Search-friendly pages'],
-    impact: 'Strengthens the company’s digital presence and makes services easier for customers to understand.',
+      'Customer ordering with real-time tracking and a courier map, plus a restaurateur dashboard for orders and analytics.',
+    technologies: ['Mobile (iOS / Android)', 'REST APIs', 'Real-time tracking', 'Wallet payments'],
+    features: ['Order tracking with courier map', 'Bankily / Masrvi / Sedad payments', 'Restaurateur analytics dashboard', 'Push notifications'],
+    links: [
+      { label: 'App Store', href: 'https://apps.apple.com/mr/app/sha6er/id6566187655' },
+      { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.smartmssa.sha6erv1' },
+    ],
   },
   {
-    name: 'AB Gift',
+    name: 'Smart Claim',
+    tagline: 'SMART MS SA - claims-management SaaS',
     description:
-      'An e-commerce style product presentation platform for gifts and customer browsing journeys.',
+      'Tracks and processes customer claims for businesses of any size, with transparent status for claimants.',
+    technologies: ['React', 'REST APIs', 'PostgreSQL', 'Role-based access'],
+    features: ['Customizable claim forms', 'Admin / agent / collaborator / claimant roles', 'Real-time notifications', 'Public and private comments'],
+    links: [{ label: 'Product page', href: 'https://www.smartmssa.com/smart-claim-2-2/' }],
+  },
+  {
+    name: 'AB Group Gift Cards',
+    tagline: 'Freelance - digital gift-card platform',
+    description: 'Arabic / English gift-card platform with authentication and payment workflows.',
     technologies: ['React', 'Next.js', 'Supabase', 'Tailwind CSS'],
-    features: ['Product catalog', 'Mobile-first browsing', 'Admin-ready data structure', 'Conversion-focused pages'],
-    impact: 'Turns a product catalog into a clearer customer experience with maintainable content workflows.',
+    features: ['Account creation and login', 'Gift-card catalog and purchase', 'Payment flows', 'Bilingual UI'],
+    links: [{ label: 'Live site', href: 'https://abgroupgiftcards.com/' }],
   },
   {
-    name: 'Internal Customer Support Platform',
-    description:
-      'A support and operations platform designed to centralize requests, customer context, and team follow-up.',
-    technologies: ['React', 'Django REST Framework', 'PostgreSQL', 'REST APIs'],
-    features: ['Ticket tracking', 'Customer records', 'Team dashboards', 'Workflow status management'],
-    impact: 'Improves operational visibility and helps teams respond to customer needs with better context.',
+    name: '@sidieyel/wysiwyg',
+    tagline: 'Open source - published on npm',
+    description: 'Tiptap-based rich-text editor for React with a configurable toolbar and CSS-variable theming.',
+    technologies: ['React', 'TypeScript', 'Tiptap', 'CI'],
+    features: ['Configurable toolbar', 'Theming via CSS variables', 'Demo app and docs', 'Published package'],
+    links: [{ label: 'GitHub', href: 'https://github.com/SidiEyel/wysiwyg' }],
+  },
+];
+
+const openSource = [
+  {
+    project: 'React (facebook/react)',
+    summary:
+      'Test fix in the Fizz server renderer merged by core maintainer Sebastian Silbermann. Three further fixes open under review, each with a failing-first regression test.',
+    links: [
+      { label: 'PR #37213 (merged)', href: 'https://github.com/facebook/react/pull/37213' },
+      { label: '#37115 Scheduler crash after jsdom teardown', href: 'https://github.com/facebook/react/pull/37115' },
+      { label: '#37181 Fizz streaming hang', href: 'https://github.com/facebook/react/pull/37181' },
+      { label: '#37262 hydrated <dialog> onToggle', href: 'https://github.com/facebook/react/pull/37262' },
+    ],
+  },
+  {
+    project: 'VulnClaw (AI pentest CLI, 2.7k stars)',
+    summary:
+      'Diagnosed and fixed a cross-platform test failure (POSIX vs Windows cmd quoting); merged by the project owner.',
+    links: [{ label: 'PR #221 (merged)', href: 'https://github.com/Netw0rkNoob/VulnClaw/pull/221' }],
+  },
+  {
+    project: 'React Flight triage',
+    summary:
+      'Reproduced and disproved a reported bug, leading its reporter (author of Waku / Zustand) to close the issue.',
+    links: [{ label: 'Issue #37116', href: 'https://github.com/facebook/react/issues/37116' }],
   },
 ];
 
 const automationItems = [
-  'Connecting AI APIs to practical web workflows and internal tools.',
-  'Exploring LLM-powered assistants for search, support, and decision support.',
+  'Built the LLM-backed assistant inside the Bedel app, with Arabic and French support.',
+  'Integrated document processing, verification and conversational assistants into internal business tools.',
   'Automating repetitive business processes with structured data and APIs.',
   'Building dashboards and data-driven interfaces for clearer operational visibility.',
-  'Designing backend systems that make automation reliable, observable, and maintainable.',
 ];
 
 const education = [
   {
-    degree: 'Master’s Degree in Information Systems',
-    school: 'Faculty of Science and Technology, University of Nouakchott',
+    degree: 'Master\u2019s Degree in Computer Systems (Informatique Syst\u00e8me)',
+    school: 'Facult\u00e9 des Sciences et Techniques, University of Nouakchott',
     period: '2021 - 2023',
   },
   {
-    degree: 'Bachelor’s Degree in Mathematics and Computer Science',
-    school: 'Faculty of Science and Technology, University of Nouakchott',
+    degree: 'Bachelor\u2019s Degree in Mathematics and Computer Science',
+    school: 'Facult\u00e9 des Sciences et Techniques, University of Nouakchott',
     period: '2018 - 2021',
   },
 ];
 
 const achievements = [
-  'Delivered software across government, healthcare, education, hospitality, and private business contexts.',
-  'Built web and mobile solutions using React, Next.js, Spring Boot, Django REST Framework, Flutter, Strapi, and Supabase.',
-  'Completed training in Redux, graphic design, cloud computing, and mobile development.',
-  'Worked in Arabic, French, and English-speaking environments with distributed technical teams.',
+  'Two apps I worked on are live on the App Store and Google Play (Bedel, Sha6er).',
+  'Built and operate Tahdir, a paid exam-prep platform with 152 specializations.',
+  'Open-source contributor to React: a merged PR reviewed by a core maintainer, three more under review.',
+  'Worked in Arabic, French and English-speaking environments with distributed teams in Europe and the Gulf.',
 ];
 
 const contactLinks = [
@@ -263,7 +321,7 @@ export const WebsiteLandingPage = () => {
             <Image src={logo} alt="Sidi Eyel" width={40} height={40} className="h-10 w-10 rounded-md object-cover" />
             <div className="hidden leading-tight sm:block">
               <p className="text-sm font-semibold text-slate-950 dark:text-white">Sidi Eyel</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Software Engineer</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400">Full-Stack Software Engineer</p>
             </div>
           </Link>
           <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300 lg:flex">
@@ -293,12 +351,12 @@ export const WebsiteLandingPage = () => {
                 Full-stack development, AI integration, and digital transformation
               </div>
               <h1 className="text-4xl font-semibold leading-tight text-slate-950 md:text-6xl lg:text-7xl dark:text-white">
-                Software Engineer building scalable web platforms and intelligent business systems.
+                Full-stack engineer shipping fintech, delivery and SaaS platforms.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                I am Sidi Abdellah Mohamed Hassane Eyel, a full-stack software engineer with a Master’s degree in
-                Information Systems. I design backend systems, data-driven applications, dashboards, APIs, and automation
-                workflows that help organizations modernize how they work.
+                I am Sidi Abdellah Mohamed Hassane Eyel, a full-stack software engineer (M.Sc. Computer Systems) working
+                with Laravel, React / Next.js, PostgreSQL and LLM integrations. Two apps I worked on are live on the
+                App Store and Google Play, and I contribute to React.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -344,7 +402,7 @@ export const WebsiteLandingPage = () => {
                   ))}
                 </div>
                 <div className="space-y-3">
-                  {['Scalable APIs', 'Business dashboards', 'AI-ready workflows', 'Automation and data processing'].map((item) => (
+                  {['Laravel + PostgreSQL backends', 'React / Next.js frontends', 'LLM-backed product features', 'Open-source contributor to React'].map((item) => (
                     <div key={item} className="flex items-center gap-3 rounded-md border border-slate-200 bg-white p-3 text-sm font-medium text-slate-700 dark:border-white/10 dark:bg-[#0d141b] dark:text-slate-200">
                       <CheckCircle2 className="h-4 w-4 text-teal-600 dark:text-teal-300" />
                       {item}
@@ -364,8 +422,8 @@ export const WebsiteLandingPage = () => {
             </div>
             <div className="space-y-6 text-lg leading-9 text-slate-600 dark:text-slate-300">
               <p>
-                I am a motivated Software Engineer with a Master’s degree in Information Systems from the Faculty of
-                Science and Technology at the University of Nouakchott. My work sits between full-stack engineering,
+                I am a full-stack software engineer with a Master’s degree in Computer Systems from the Faculté des
+                Sciences et Techniques, University of Nouakchott. My work sits between full-stack engineering,
                 system integration, and practical digital transformation.
               </p>
               <p>
@@ -453,6 +511,7 @@ export const WebsiteLandingPage = () => {
                   <div className="mb-5 flex items-start justify-between gap-4">
                     <div>
                       <h3 className="text-2xl font-semibold text-slate-950 dark:text-white">{project.name}</h3>
+                      <p className="mt-1 text-sm font-medium text-teal-600 dark:text-teal-300">{project.tagline}</p>
                       <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{project.description}</p>
                     </div>
                     <BriefcaseBusiness className="h-6 w-6 shrink-0 text-teal-600 dark:text-teal-300" />
@@ -472,10 +531,61 @@ export const WebsiteLandingPage = () => {
                       </ul>
                     </div>
                     <div>
-                      <p className="mb-2 text-sm font-semibold text-slate-950 dark:text-white">Impact</p>
-                      <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">{project.impact}</p>
+                      <p className="mb-2 text-sm font-semibold text-slate-950 dark:text-white">See it live</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.links.map((l) => (
+                          <a
+                            key={l.href}
+                            href={l.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-1 rounded-md border border-teal-200 bg-white px-3 py-1 text-xs font-semibold text-teal-700 transition hover:border-teal-500 dark:border-teal-300/30 dark:bg-white/5 dark:text-teal-200"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            {l.label}
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="open-source" className="px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Open Source"
+              title="Contributions to React and security tooling"
+              description="Bugs I reproduced, fixed with failing-first tests, and got merged by core maintainers."
+            />
+            <div className="grid gap-5 lg:grid-cols-3">
+              {openSource.map((item) => (
+                <article key={item.project} className="rounded-md border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/70 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+                  <div className="mb-4 flex items-center gap-3">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-md bg-teal-100 text-teal-700 dark:bg-teal-300/10 dark:text-teal-200">
+                      <Github className="h-5 w-5" />
+                    </span>
+                    <h3 className="text-lg font-semibold text-slate-950 dark:text-white">{item.project}</h3>
+                  </div>
+                  <p className="leading-7 text-slate-600 dark:text-slate-300">{item.summary}</p>
+                  <ul className="mt-4 space-y-2">
+                    {item.links.map((l) => (
+                      <li key={l.href}>
+                        <a
+                          href={l.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-teal-700 hover:underline dark:text-teal-200"
+                        >
+                          <ExternalLink className="h-3.5 w-3.5 shrink-0" />
+                          {l.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </article>
               ))}
             </div>
@@ -557,8 +667,8 @@ export const WebsiteLandingPage = () => {
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-300 dark:text-teal-700">Contact</p>
                   <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Let’s build something useful.</h2>
                   <p className="mt-5 max-w-xl text-lg leading-8 text-slate-300 dark:text-slate-600">
-                    I am open to software engineering roles and projects involving full-stack platforms, backend systems,
-                    AI integration, automation, dashboards, and digital transformation.
+                    Open to remote full-stack roles and freelance missions (GMT, full overlap with Europe). Laravel,
+                    React / Next.js, PostgreSQL and LLM integration.
                   </p>
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2">
