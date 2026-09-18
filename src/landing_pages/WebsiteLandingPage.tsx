@@ -34,7 +34,7 @@ const navItems = [
 ];
 
 const stats = [
-  { value: '3+', label: 'Years shipping production platforms' },
+  { value: '3.5+', label: 'Years shipping production platforms' },
   { value: '2', label: 'Apps live on the App Store & Google Play' },
   { value: 'React', label: 'Open-source contributor (merged PR)' },
 ];
@@ -48,7 +48,7 @@ const skillGroups = [
   {
     title: 'Frontend',
     icon: Sparkles,
-    skills: ['React', 'Next.js (SSR / ISR)', 'TypeScript', 'TanStack Start', 'React Native', 'Tailwind CSS'],
+    skills: ['React', 'Next.js (SSR / ISR)', 'TypeScript', 'TanStack Start', 'Tailwind CSS', 'Flutter', 'React Native'],
   },
   {
     title: 'Data',
@@ -94,7 +94,7 @@ const experiences = [
     summary:
       'Shipped customer-facing products and internal platforms for private and public-sector clients.',
     highlights: [
-      'Sha6er - food-delivery platform (iOS / Android, 4.6 stars): ordering, real-time order tracking with courier map, wallet payments, restaurateur dashboard.',
+      'Sha6er - food-delivery platform: Flutter mobile app (iOS / Android, 4.6 stars) and Next.js web app; ordering, real-time order tracking with courier map, wallet payments, restaurateur dashboard.',
       'Smart Claim - claims-management SaaS: customizable claim forms, role-based access, real-time notifications, comment threads.',
       'Designed database schemas and optimized reporting SQL on PostgreSQL; built operational dashboards for decision support.',
       'Integrated AI features (document processing, verification, conversational assistant) into internal business tools.',
@@ -185,10 +185,10 @@ const projects: {
   },
   {
     name: 'Sha6er',
-    tagline: 'SMART MS SA - food delivery, 4.6 stars',
+    tagline: 'SMART MS SA - food delivery, Flutter + Next.js, 4.6 stars',
     description:
       'Customer ordering with real-time tracking and a courier map, plus a restaurateur dashboard for orders and analytics.',
-    technologies: ['Mobile (iOS / Android)', 'REST APIs', 'Real-time tracking', 'Wallet payments'],
+    technologies: ['Flutter (iOS / Android)', 'Next.js web app', 'REST APIs', 'Real-time tracking', 'Wallet payments'],
     features: ['Order tracking with courier map', 'Bankily / Masrvi / Sedad payments', 'Restaurateur analytics dashboard', 'Push notifications'],
     links: [
       { label: 'App Store', href: 'https://apps.apple.com/mr/app/sha6er/id6566187655' },
